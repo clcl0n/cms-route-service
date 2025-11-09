@@ -31,7 +31,6 @@ public static class OtelExtension
                             .AddContainerDetector()
                             .AddOperatingSystemDetector()
                     )
-                    .AddSource("Wolverine")
                     .AddAspNetCoreInstrumentation()
                     .AddHttpClientInstrumentation()
                     .AddNpgsql()

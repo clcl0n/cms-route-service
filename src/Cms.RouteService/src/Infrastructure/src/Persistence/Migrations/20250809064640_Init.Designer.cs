@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Cms.RouteService.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(RouteDbContext))]
-    [Migration("20250601162749_RoutesRefactor")]
-    partial class RoutesRefactor
+    [Migration("20250809064640_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
