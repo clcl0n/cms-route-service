@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Application\src\Cms.RouteService.Application.csproj" />
-    <ProjectReference Include="..\..\Domain\src\Cms.RouteService.Domain.csproj" />
+    <ProjectReference Include="..\..\Cms.RouteService.Application\src\Cms.RouteService.Application.csproj" />
+    <ProjectReference Include="..\..\Cms.RouteService.Domain\src\Cms.RouteService.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

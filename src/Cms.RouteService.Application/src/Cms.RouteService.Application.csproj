@@ -10,8 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\src\Cms.RouteService.Domain.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\src\Cms.RouteService.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Cms.RouteService.Domain\src\Cms.RouteService.Domain.csproj" />
+    <ProjectReference Include="..\..\Cms.RouteService.Infrastructure\src\Cms.RouteService.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

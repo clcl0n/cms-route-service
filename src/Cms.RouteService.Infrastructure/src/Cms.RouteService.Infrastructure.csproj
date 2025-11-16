@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\src\Cms.RouteService.Domain.csproj" />
+    <ProjectReference Include="..\..\Cms.RouteService.Domain\src\Cms.RouteService.Domain.csproj" />
   </ItemGroup>
 
 </Project>

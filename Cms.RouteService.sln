@@ -1,3 +1,4 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
@@ -8,25 +9,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cms.RouteService", "Cms.Rou
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A89945D3-E118-3D7A-68F5-5A2374135B26}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cli", "Cli", "{16603CA4-3755-0A0D-A1F7-8A8B2786E83D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cms.RouteService.Cli", "src\Cms.RouteService\src\Cli\src\Cms.RouteService.Cli.csproj", "{F104F23F-A090-AAAD-2512-39D7CD02DCBD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{0921A84B-F0BA-27BB-0D4C-573205DA7BEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cms.RouteService.Api", "src\Cms.RouteService\src\Api\src\Cms.RouteService.Api.csproj", "{38EC1017-B34A-83E5-CE11-216661E3B35E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cms.RouteService.Api", "src\Cms.RouteService.Api\src\Cms.RouteService.Api.csproj", "{38EC1017-B34A-83E5-CE11-216661E3B35E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{F4CBE7F1-983B-CC48-ED75-8B658779EAFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cms.RouteService.Application", "src\Cms.RouteService\src\Application\src\Cms.RouteService.Application.csproj", "{032B520D-BB5C-7868-ED68-3513EB8CDAA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cms.RouteService.Application", "src\Cms.RouteService.Application\src\Cms.RouteService.Application.csproj", "{032B520D-BB5C-7868-ED68-3513EB8CDAA6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4FCAEE7D-BF9C-509C-DA29-65E0608B7790}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cms.RouteService.Infrastructure", "src\Cms.RouteService\src\Infrastructure\src\Cms.RouteService.Infrastructure.csproj", "{83CD87EB-D1F8-CBF0-C542-0172A811420D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cms.RouteService.Infrastructure", "src\Cms.RouteService.Infrastructure\src\Cms.RouteService.Infrastructure.csproj", "{83CD87EB-D1F8-CBF0-C542-0172A811420D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{DAD7F06F-99D5-3613-9B89-5D7C565CADC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cms.RouteService.Domain", "src\Cms.RouteService\src\Domain\src\Cms.RouteService.Domain.csproj", "{5B4E7326-D187-7744-021E-EECBA2A65A93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cms.RouteService.Domain", "src\Cms.RouteService.Domain\src\Cms.RouteService.Domain.csproj", "{5B4E7326-D187-7744-021E-EECBA2A65A93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F104F23F-A090-AAAD-2512-39D7CD02DCBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F104F23F-A090-AAAD-2512-39D7CD02DCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F104F23F-A090-AAAD-2512-39D7CD02DCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F104F23F-A090-AAAD-2512-39D7CD02DCBD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{38EC1017-B34A-83E5-CE11-216661E3B35E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{38EC1017-B34A-83E5-CE11-216661E3B35E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38EC1017-B34A-83E5-CE11-216661E3B35E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,8 +54,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3313FEFF-3120-DCB2-5B3C-C20EC202317B} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{A89945D3-E118-3D7A-68F5-5A2374135B26} = {3313FEFF-3120-DCB2-5B3C-C20EC202317B}
-		{16603CA4-3755-0A0D-A1F7-8A8B2786E83D} = {A89945D3-E118-3D7A-68F5-5A2374135B26}
-		{F104F23F-A090-AAAD-2512-39D7CD02DCBD} = {16603CA4-3755-0A0D-A1F7-8A8B2786E83D}
 		{0921A84B-F0BA-27BB-0D4C-573205DA7BEE} = {A89945D3-E118-3D7A-68F5-5A2374135B26}
 		{38EC1017-B34A-83E5-CE11-216661E3B35E} = {0921A84B-F0BA-27BB-0D4C-573205DA7BEE}
 		{F4CBE7F1-983B-CC48-ED75-8B658779EAFF} = {A89945D3-E118-3D7A-68F5-5A2374135B26}
