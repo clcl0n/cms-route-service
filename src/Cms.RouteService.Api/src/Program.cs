@@ -1,7 +1,7 @@
-using System.Text.Json.Serialization;
-using Cms.RouteService.Api.Extensions;
+using Cms.RouteService.Api.Setups;
 using Cms.RouteService.Api.Services;
 using Cms.RouteService.Application;
+using Cms.RouteService.Infrastructure;
 using Cms.Shared.Setups;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,27 +12,41 @@ public static class Program
 {
     public static void Main(string[] args)
     {
-        var builder = WebApplication.CreateBuilder(args);
+        var builder = WebApplication
+            .CreateBuilder(args)
+            .SetupBuilder();
 
-        builder.Logging.ConfigureOtel();
+        using var app = builder
+            .Build()
+            .SetupApplication();
+
+        app.Run();
+    }
+
+    private static WebApplicationBuilder SetupBuilder(this WebApplicationBuilder builder)
+    {
+        builder.Logging.SetupOpenTelemetry();
+        builder.Services.SetupOpenTelemetry();
 
         builder.Services.AddGrpc();
 
-        builder.Services.ConfigureOtel();
-
         var healthChecksBuilder = builder.Services.AddHealthChecks();
 
-        builder.Services.AddApplication(healthChecksBuilder, builder.Configuration);
+        healthChecksBuilder.SetupHealthCheck(builder.Configuration);
 
-        healthChecksBuilder.ConfigureHealthCheck(builder.Configuration);
+        builder.Services.AddApplication();
+        builder.Services.AddInfrastructure(healthChecksBuilder, builder.Configuration);
 
-        using var app = builder.Build();
+        return builder;
+    }
 
+    private static WebApplication SetupApplication(this WebApplication app)
+    {
         app.MapGrpcService<PostRouteService>();
         app.MapGrpcService<TopicRouteService>();
 
         app.UseHealthCheck();
 
-        app.Run();
+        return app;
     }
 }

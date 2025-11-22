@@ -2,22 +2,14 @@ using Cms.RouteService.Application.CommandHandlers;
 using Cms.RouteService.Application.CommandHandlers.Interfaces;
 using Cms.RouteService.Application.QueryHandlers;
 using Cms.RouteService.Application.QueryHandlers.Interfaces;
-using Cms.RouteService.Infrastructure;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Cms.RouteService.Application;
 
 public static class DependencyInjection
 {
-    public static void AddApplication(
-        this IServiceCollection services,
-        IHealthChecksBuilder healthChecksBuilder,
-        IConfiguration configuration
-    )
+    public static void AddApplication(this IServiceCollection services)
     {
-        services.AddInfrastructure(healthChecksBuilder, configuration);
-
         // Command Handlers
         // Must be Scoped because they depend on IUnitOfWork which is Scoped
         services.AddScoped<ICreatePostRouteCommandHandler, CreatePostRouteCommandHandler>();

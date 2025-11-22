@@ -3,11 +3,11 @@ using Cms.Shared.Setups;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Cms.RouteService.Api.Extensions;
+namespace Cms.RouteService.Api.Setups;
 
-public static class HealthCheckExtension
+public static class HealthCheckSetup
 {
-    public static void ConfigureHealthCheck(
+    public static void SetupHealthCheck(
         this IHealthChecksBuilder builder,
         IConfiguration configuration
     )
